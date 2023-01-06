@@ -33,6 +33,77 @@ width:50%;
     padding-left: 20%;
 }
 .logo a{
+    
+    /*--------------Stilizimi per Format-------------*/
+
+.wraper{
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    margin-top:50px;
+    margin-left:30px;
+    padding: 30px;
+    position: relative;
+    left: 450px;
+    top: 200px;
+}
+.wraper .title{
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    color: darkblue ;
+}
+.wraper .form{
+    width: 100%;
+}
+
+.wraper .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wraper .form .input_field label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.wraper .form .input_field .input,
+.wraper .form .input_field .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wraper .form .input_field .textarea{
+    resize: none;
+    height: 60px;
+}
+
+.wraper .form .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    background: darkblue;
+    color:white;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+
+.wraper .form .input_field:last-child{
+    margin-bottom: 0;
+}
     text-decoration: none;
     text-transform: uppercase;
     font-size: 22px;
