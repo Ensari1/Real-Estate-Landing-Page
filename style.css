@@ -339,3 +339,58 @@ footer{
 .wraper .form .input_field:last-child{
     margin-bottom: 0;
 }
+
+.wraper1{
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    margin-top:50px;
+    margin-left:30px;
+    padding: 30px;
+    position: relative;
+    left: 450px;
+   
+}
+
+.wraper1 .title{
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    color: darkblue ;
+}
+
+.wraper1 .form{
+    width: 100%;
+}
+
+.wraper1 .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wraper1 .form .input_field label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.wraper1 .form .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    background: darkblue;
+    color:white;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wraper1 .form .input_field:last-child{
+    margin-bottom: 0;
+}
+
