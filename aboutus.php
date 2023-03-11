@@ -51,7 +51,7 @@ function showSlides(n) {
                  <li><a href="contactus.php">Contact Us</a></li>
                 <?php else: ?>
                   <li><a href="aboutus.php">About Us</a></li>
-                  <li><a href="dashboard1/index.php">Dashboard</a></li>
+                  <li><a href="dashboard.php">Dashboard</a></li>
                  <li><a href="logout.php">Logout</a></li>
                 <?php endif; ?>
             </ul>
