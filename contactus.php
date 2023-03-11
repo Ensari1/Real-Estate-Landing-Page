@@ -102,6 +102,7 @@ if (isset($_POST['Submit'])) {
     } else {
         $message = 'Sorry, there was an error processing your request.';
     }
+    header("Location: index.php");
 }
 ?>
 </header>
