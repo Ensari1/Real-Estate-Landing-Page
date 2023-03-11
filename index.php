@@ -1,12 +1,19 @@
+<?php
+    require './users/UserController.php';
+
+    $user = new UserController;
+    $users = $user->all();
+?>
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <title>Real-Estate-Landing-Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard1/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-<header>      
+<header>  
     <div class="header-content">
         <div class="logo">
             <a href="index.html">
@@ -15,11 +22,16 @@
         </div>
         <div class="navbar">
             <ul class="nav-items">
-                <li><a class="active" href="index.html">Home</a></li>
-                 <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li><a class="active" href="index.php">Home</a></li>
+                <?php if(isset($_SESSION['name'])): ?>
+                    <li><a href="aboutus.php">About Us</a></li>
+               <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="logout.php">Logout</a></li>
+                <?php else: ?>
+                    <li><a href="contactus.php">Contact Us</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="register.php">Register</a></li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>
@@ -37,7 +49,6 @@
         </center>  
     </div>       
 </header> 
-
 <section class="section1">
     <div class="first-div container1">
         <div class="div1-content">
@@ -69,7 +80,30 @@
         </div>
     </div>
 </section> 
-
+    <div class="widget" id="properties">
+				<h2>Users</h2>
+				<div class="table-container">
+					<table>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Email</th>
+                                <th>Roli</th>   
+							</tr>
+						</thead>
+					<?php foreach($users as $user): ?> 
+			        <tbody>
+		                    <tr>
+		                    	<td><?php echo $user['name']; ?></td>
+		                    	<td><?php echo $user['email']; ?></td>
+		                    	<td><?php echo $user['roli']; ?></td>
+		                    </tr>			
+		
+                    </tbody>
+						<?php endforeach; ?>
+					</table>
+			</div>
+			</div>
 <footer>
     <div class="main-footer">
         <div class="footer-paragraph">
