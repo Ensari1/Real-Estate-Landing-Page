@@ -466,3 +466,41 @@ footer{
   from {opacity: .4}
   to {opacity: 1}
 }
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+    .header-content{
+      width: 100%;
+      /* margin: 0 auto; */
+    }
+    
+    .logo{
+      width: 30%;
+    }
+    
+    .navbar{
+      width: 70%;
+    }
+    
+    .nav-items{
+      justify-content: flex-end;
+    }
+    
+    .header-container{
+      width: 40%;
+      left: 10%;
+    }
+    
+    center{
+      margin-top: 10%;
+      padding-left: 10%;
+    }
+    
+    .container1{
+      margin:0px 10%;
+    }
+    
+    .container2{
+      margin:0px 20%;
+    }
+  }
+  
