@@ -95,7 +95,6 @@
 					</table>
 				</div>
 			</div>
-			//pjesa e valit
 			<div class="widget" id="properties">
 				<h2>Properties</h2>
 				<div class="table-container">
